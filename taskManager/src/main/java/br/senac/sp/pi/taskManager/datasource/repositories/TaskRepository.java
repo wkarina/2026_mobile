@@ -53,10 +53,10 @@ public interface TaskRepository extends JpaRepository<Task, Long> {
     // NAMED (2 exemplos)
     // =========================
 
-    List<Task> findByTitleNamed(@Param("title") String title);
-
-    List<Task> findAdvancedNamed(
-            @Param("status") TaskStatus status,
-            @Param("startDate") Date startDate
-    );
+//    List<Task> findByTitleNamed(@Param("title") String title);
+//
+//    List<Task> findAdvancedNamed(
+//            @Param("status") TaskStatus status,
+//            @Param("startDate") Date startDate
+//    );
 }
