@@ -40,7 +40,7 @@ public interface TaskRepository extends JpaRepository<Task, Long> {
         WHERE STATUS = :status
           AND PRIORITY = :priority
           AND CREATION_DATE >= :startDate
-          AND DUE_DATE <= :endDate
+          AND DUE_DATE <= :endDate      
     """, nativeQuery = true)
     List<Task> findAdvancedNative(
             @Param("status") String status,
