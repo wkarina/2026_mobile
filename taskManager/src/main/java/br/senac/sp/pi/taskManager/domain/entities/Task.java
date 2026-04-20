@@ -30,7 +30,7 @@ public class Task {
     @Column(name= "COMPLETION_DATE", nullable = true )
     private @Getter @Setter Date completionDate;
 
-    @Column(name= "due_DATE", nullable = true )
+    @Column(name= "DUE_DATE", nullable = true )
     private @Getter @Setter Date dueDate;
 
     private transient String inutil;

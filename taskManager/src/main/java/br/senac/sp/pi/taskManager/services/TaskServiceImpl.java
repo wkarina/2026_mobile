@@ -50,7 +50,7 @@ public class TaskServiceImpl implements TaskService {
     @Override
     @Transactional(propagation = Propagation.SUPPORTS)
     public List<Task> findAll(Sort sort){
-        return this.taskRepository.findAll();
+        return this.taskRepository.findAll(sort);
     }
 
     @Override
